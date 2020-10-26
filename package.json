@@ -1,0 +1,23 @@
+{
+  "name": "jquery-server-side-calculator-masterv2",
+  "version": "1.0.0",
+  "description": "[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md",
+  "main": "index.js",
+  "dependencies": {
+    "jquerry": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeharvell/serversidecalczhv2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeharvell/serversidecalczhv2/issues"
+  },
+  "homepage": "https://github.com/zeharvell/serversidecalczhv2#readme"
+}
