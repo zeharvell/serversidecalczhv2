@@ -7,7 +7,7 @@ app.use(express.static('server/public'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const history = [1, 2, 3];
+const history = [];
 
 app.post('/api/calc', (req, res) => {
   const val1 = parseInt(req.body.val1);
