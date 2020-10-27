@@ -35,6 +35,7 @@ app.post('/api/calc', (req, res) => {
     op,
     answer,
   };
+
   history.push(equation);
 
   //switch(op) {
@@ -56,7 +57,7 @@ app.post('/api/calc', (req, res) => {
   //break;
   //}
 
-  res.send(200);
+  res.sendStatus(200);
 });
 
 app.get('/api/history', (req, res) => {
