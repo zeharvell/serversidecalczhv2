@@ -20,7 +20,7 @@ function evaluate() {
   const val1 = $('#js-input-val1').val();
   const val2 = $('#js-input-val2').val();
 
-  if (!val1 || val2 || !op) {
+  if (val1 === null || val2 === null) {
     return alert('enter values');
   }
 
@@ -31,20 +31,19 @@ function evaluate() {
   };
 
   postData(dataForServer);
-
-  function postData(dataForServer) {
-    $.ajax({
-      type: 'POST',
-      url: '/api/calc',
-      data: dataForServer,
+}
+function postData(dataForServer) {
+  $.ajax({
+    type: 'POST',
+    url: '/api/calc',
+    data: dataForServer,
+  })
+    .then((response) => {
+      console.log(response);
     })
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }
+    .catch((err) => {
+      console.log(err);
+    });
 }
 
 function getData() {
